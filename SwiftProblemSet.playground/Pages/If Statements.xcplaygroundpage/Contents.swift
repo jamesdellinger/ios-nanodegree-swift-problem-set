@@ -11,7 +11,15 @@ import Foundation
 2. Declare a bool called `sick` with an initial value of true or false.
 3. Write a statement such that when `sick` is true the function `rest()` is called.
 */
+func rest() {
+    print("Stay in bed.")
+}
 
+var sick: Bool = true
+
+if sick {
+    rest()
+}
 /*: 
 ### Exercise 11
 
@@ -19,7 +27,16 @@ import Foundation
 2. Declare two bools called `finishedWork` and `gotTickets` with initial values of true or false.
 3. Write a statement such that when both `finishedWork` and `gotTickets` are true the function `goToConcert()` is called.
  */
+func goToConcert() {
+    print("That vocalist is incredible!")
+}
 
+var finishedWork: Bool = true
+var gotTickets: Bool = true
+
+if finishedWork && gotTickets {
+    goToConcert()
+}
 /*:
 ### Exercise 12
 
@@ -43,16 +60,30 @@ Change the values of the variables and see how the output changes.
 */
 var game = "Slow adventures with Morris the Lorris"
 
-var bugs = 9
+var bugs = 7
 var hasMusic = true
-var numberOfLevels = 7
+var numberOfLevels = 8
 
 func release() {
     print("\(game) is now ready for sale.")
 }
 
 func checkForRelease(bugs: Int, music: Bool, levels: Int) {
-    
+    if bugs < 10 && music && levels > 5 {
+        release()
+    } else {
+        var errorMessage: String = ""
+        if bugs >= 10 {
+            errorMessage = errorMessage + "Squash \(bugs - 9) more bug(s)."
+        }
+        if !music {
+            errorMessage = errorMessage + " Add some music to this game."
+        }
+        if numberOfLevels <= 5 {
+            errorMessage = errorMessage + " Add \(5 - numberOfLevels + 1) more level(s)."
+        }
+        print(errorMessage)
+    }
 }
 
 checkForRelease(bugs: bugs, music: hasMusic, levels: numberOfLevels)
@@ -79,6 +110,15 @@ var canFinishRun: Bool = true
 
 func checkTrainingStatus(name: String, bike: Bool, run: Bool) {
     //TODO: Add your if, else-if statement here!
+    if canFinishBike && canFinishRun {
+        print("\(name), you're ready for your duathlon!")
+    } else if canFinishBike && !canFinishRun {
+        print("\(name), focus on your run training.")
+    } else if !canFinishBike && canFinishRun {
+        print("\(name), focus on your bike training.")
+    } else  {
+        print("\(name), you've still got quite a bit of training to do for both biking and running!")
+    }
 }
 
 checkTrainingStatus(name: name, bike: canFinishBike, run: canFinishRun)

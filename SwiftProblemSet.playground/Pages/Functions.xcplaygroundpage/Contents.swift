@@ -5,26 +5,25 @@
 //: ## Functions 
 //: ### Exercise 14
 //: The function `emojiLove` should take two `String` parameters and use them to print a `String` with  the format "stringParameterOne ❤️ stringParameterTwo".
-func emojiLove(/* add parameters here */) {
+func emojiLove(s1: String, s2: String) {
     /* add function implementation here */
+    print("\(s1) ❤️ \(s2)")
 }
 
-/* Example Function Call
+/* Example Function Call */
  
  emojiLove(s1: "cats", s2: "dogs") // prints "cats ❤️ dogs"
  emojiLove(s1: "udacity", s2: "students") // prints "udacity ❤️ students"
  emojiLove(s1: "peanut butter", s2: "jelly") // prints "peanut butter ❤️ jelly"
  emojiLove(s1: "ying", s2: "yang") // prints "ying ❤️ yang"
- 
- */
-
 //: ### Exercise 15
 //: The function `median` should take three `Int` parameters and return the `Int` value in the middle.
-func median(/* add parameters here */) /* define the return type */ {
+func median(num1: Int, num2: Int, num3: Int) -> Int {
     /* add function implementation here */
+    return min(max(num1, num2), max(num2, num3), max(num1, num3))
 }
 
-/* Example Function Call
+/* Example Function Call */
  
  median(num1: 1, num2: 5, num3: 6) // 5
  median(num1: 2, num2: 1, num3: 4) // 2
@@ -33,9 +32,6 @@ func median(/* add parameters here */) /* define the return type */ {
  median(num1: 0, num2: 0, num3: 0) // 0
  median(num1: 2, num2: 3, num3: 1) // 2
  median(num1: 2, num2: 2, num3: 1) // 2
- 
- */
-
 /*:
  ### Exercise 16
  
@@ -46,20 +42,28 @@ func median(/* add parameters here */) /* define the return type */ {
  
  **Note**: It is assumed that the input string is given in English.
  */
-func beginsWithVowel(/* add parameters here */) /* define the return type */ {
+func beginsWithVowel(_ inputString: String) -> Bool {
     /* add function implementation here */
+    if inputString == "" {
+        return false
+    }
+    let testChar: Character = inputString.characters[inputString.startIndex]
+    if testChar == "a" || testChar == "e" || testChar == "i" || testChar == "o" || testChar == "u" {
+        return true
+    } else if testChar == "A" || testChar == "E" || testChar == "I" || testChar == "O" || testChar == "U" {
+        return true
+    } else {
+        return false
+    }
 }
 
-/* Example Function Call
+/* Example Function Call */
  
  beginsWithVowel("Apples") // true
  beginsWithVowel("pIG") // false
  beginsWithVowel("oink") // true
  beginsWithVowel("udacity") // true
  beginsWithVowel("") // false
- 
- */
-
 /*:
  ### Exercise 17
  
@@ -71,19 +75,24 @@ func beginsWithVowel(/* add parameters here */) /* define the return type */ {
  
  **Hint**: Re-use the `beginsWithVowel` function.
  */
-func funWithWords(/* add parameters here */) /* define the return type */ {
+func funWithWords(_ inputString: String) -> String {
     /* add function implementation here */
+    if inputString == "" {
+        return ""
+    } else if beginsWithVowel(inputString) {
+        return inputString.uppercased()
+    } else {
+        return inputString.lowercased()
+    }
 }
 
-/* Example Function Call
+/* Example Function Call */
  
  funWithWords("Apples") // "APPLES"
  funWithWords("pIG") // "pig"
  funWithWords("oink") // "OINK"
  funWithWords("udacity") // "UDACITY"
  funWithWords("") // ""
- 
- */
 /*:
  ****
  [Table of Contents](Table%20of%20Contents) | [Previous](@previous) | [Next](@next)
