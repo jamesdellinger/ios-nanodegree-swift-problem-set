@@ -27,8 +27,7 @@ print("$\(Double(numOfPennies) / 100)")
 //: Use string interpolation to replace the X with an expression for percent monthly earnings spent on rent.
 let averageMonthlyEarnings: Float = 2500
 var averageRent: Float = 800
-var weeklyEarningsString = "On average, millenials spend X% of their income on rent."
-weeklyEarningsString.replacingOccurrences(of: "X", with: "\((Int((averageRent/averageMonthlyEarnings)*100)%100))")
+var weeklyEarningsString = "On average, millenials spend \(Int((averageRent/averageMonthlyEarnings)*100)%100)% of their income on rent."
 /*:
  ****
  [Table of Contents](Table%20of%20Contents) | [Previous](@previous) | [Next](@next)
