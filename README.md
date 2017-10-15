@@ -4,6 +4,6 @@
 
 ![Platform iOS](https://img.shields.io/badge/nanodegree-iOS-blue.svg)
 
-This repository contains the Swift Problem Set project in Udacity's iOS Nanodegree.
+This repository contains the Swift Problem Set project for the Swift for Beginners Course in Udacity's iOS Nanodegree.
 
 
