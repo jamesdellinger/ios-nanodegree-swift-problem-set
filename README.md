@@ -2,8 +2,14 @@
 
 # Swift Problem Set
 
+*Put Swift fundamentals into practice to solve a set of programming problems.*
+
 ![Platform iOS](https://img.shields.io/badge/nanodegree-iOS-blue.svg)
 
 This repository contains the Swift Problem Set project for the Swift for Beginners Course in Udacity's iOS Nanodegree.
 
+### Project Grading and Evaluation
 
+[Project Review](https://github.com/jamesdellinger/ios-nanodegree-swift-problem-set/blob/master/ios-nanodegree-swift-problem-set-review.pdf)
+
+[Project Grading Rubric](https://github.com/jamesdellinger/ios-nanodegree-swift-problem-set/blob/master/swift-problem-set-rubric.pdf)
