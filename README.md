@@ -1,15 +1,13 @@
-<img src="https://s3-us-west-1.amazonaws.com/udacity-content/degrees/catalog-images/nd003.png" alt="iOS Developer Nanodegree logo" height="70" >
+# iOS Developer Nanodegree: Swift Problem Set
+*Puting Swift fundamentals into practice to solve a set of programming problems.*
 
-# Swift Problem Set
+<img src="https://github.com/jamesdellinger/ios-nanodegree-swift-problem-set/blob/master/iosndlogo.jpg" alt="iOS Developer Nanodegree logo" height="100" >
 
-*Put Swift fundamentals into practice to solve a set of programming problems.*
+## Overview
+This repository contains the Swift Problem Set project for the **Swift for Beginners Course** in Udacity's [iOS Nanodegree](https://www.udacity.com/course/ios-developer-nanodegree--nd003).
 
-![Platform iOS](https://img.shields.io/badge/nanodegree-iOS-blue.svg)
+## Project Grading and Evaluation
 
-This repository contains the Swift Problem Set project for the Swift for Beginners Course in Udacity's iOS Nanodegree.
+* [Project Review](https://github.com/jamesdellinger/ios-nanodegree-swift-problem-set/blob/master/ios-nanodegree-swift-problem-set-review.pdf)
 
-### Project Grading and Evaluation
-
-[Project Review](https://github.com/jamesdellinger/ios-nanodegree-swift-problem-set/blob/master/ios-nanodegree-swift-problem-set-review.pdf)
-
-[Project Grading Rubric](https://github.com/jamesdellinger/ios-nanodegree-swift-problem-set/blob/master/swift-problem-set-rubric.pdf)
+* [Project Grading Rubric](https://github.com/jamesdellinger/ios-nanodegree-swift-problem-set/blob/master/swift-problem-set-rubric.pdf)
