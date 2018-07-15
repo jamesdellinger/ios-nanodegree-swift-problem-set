@@ -1,5 +1,5 @@
 # iOS Developer Nanodegree: Swift Problem Set
-*Puting Swift fundamentals into practice to solve a set of programming problems.*
+*Putting Swift fundamentals into practice to solve a set of programming problems.*
 
 <img src="https://github.com/jamesdellinger/ios-nanodegree-swift-problem-set/blob/master/iosndlogo.jpg" alt="iOS Developer Nanodegree logo" height="100" >
 
